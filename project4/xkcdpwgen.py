@@ -1,32 +1,67 @@
 #!/usr/bin/env python3
+import argparse, logging, random
 
-from email.policy import default
-import sys, argparse, logging
-
-# Gather our code in a main() function
+# Generate a randomized password given the command line arguments
 def main(args, loglevel):
   logging.basicConfig(format="%(levelname)s: %(message)s", level=loglevel)
+  numWords = int(args.words)
+  numCaps = int(args.caps)
+  numNums = int(args.numbers)
+  numSymbs = int(args.symbols)
+
+  # must pass at least one word
+  if numWords <= 0:
+    logging.error("must provide at least one word")
+
+  # there can only be as many capitals as words
+  if numCaps > numWords:
+    numCaps = numWords
+
+  words = []
+
+  # select numWords random words from the word list
+  lines = open('words.txt').read().splitlines()
+  for n in range(numWords):
+    line =random.choice(lines)
+    words.append(line)
+
+  # print(words)
+
+  # capitalize numCaps words
+  for n in range(numCaps):
+    words[n] = words[n].capitalize()
   
-  numWords = 4
+  randomizedOutput = []
 
+  # add them to a new array in random order
+  for n in range(numWords):
+    randIndex = random.randint(0, len(words) - 1)
+    randomizedOutput.append(words[randIndex])
+    words.pop(randIndex)
 
+  # add numbers in random places
+  for n in range(numNums):
+    randDigit = str(random.randint(0, 9))
+    randIndex = random.randint(0, len(randomizedOutput))
+    randomizedOutput.insert(randIndex, randDigit)
+
+  symbols = ["~", "!", "@", "#", "$", "%", "^", "&", "*", ".", ":", ";"]
+
+  # add symbols in random places
+  for n in range(numSymbs):
+    randSymbolIndex = symbols[random.randint(0, len(symbols)-1)]
+    randIndex = random.randint(0, len(randomizedOutput))
+    randomizedOutput.insert(randIndex, randSymbolIndex)  
+
+  result = ''
+  for s in randomizedOutput:
+    result = result + s
   
-  # TODO Replace this with your actual code.
-  print("Hello there.")
-  logging.info("You passed an argument.")
-  logging.debug("Your Argument: %s" % args.argument)
+  print(result)
  
-
- 
-# Standard boilerplate to call the main() function to begin
-# the program.
+# to call the main() function
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description='Generate a secure, memorable password using the XKCD method.')
-  # parser = argparse.ArgumentParser( 
-  #                                   description = "Does a thing to some stuff.",
-  #                                   epilog = "As an alternative to the commandline, params can be placed in a file, one per line, and specified on the commandline like '%(prog)s @params.conf'.",
-  #                                   fromfile_prefix_chars = '@' )
-  # TODO Specify your real parameters here.
   parser.add_argument(
                       "-w",
                       "--words",
@@ -53,10 +88,6 @@ if __name__ == '__main__':
                       help="insert SYMBOLS random symbols in the password (default=0)")
   args = parser.parse_args()
   
-  # Setup logging
-  # if args.verbose:
-  #   loglevel = logging.DEBUG
-  # else:
   loglevel = logging.INFO
   
   main(args, loglevel)
