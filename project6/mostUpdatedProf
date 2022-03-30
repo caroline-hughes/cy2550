@@ -1,0 +1,18 @@
+# Last Modified: Wed Mar 30 15:59:28 2022
+#include <tunables/global>
+
+/home/caroline/appArmourProject/p2 {
+  #include <abstractions/base>
+  #include <abstractions/evince>
+  #include <abstractions/nameservice>
+  #include <abstractions/user-tmp>
+
+  /etc/crontab r,
+  /home/caroline/appArmourProject/p2 mr,
+  /proc/buddyinfo r,
+  /proc/version r,
+  /var/log/syslog r,
+  owner /home/*/.project2/config w,
+  owner /home/*/appArmourProject/template r,
+
+}

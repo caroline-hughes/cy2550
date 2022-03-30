@@ -1,0 +1,1269 @@
+caroline@caroline-QEMU-Virtual-Machine:~/appArmourProject$ sudo aa-genprof p2
+[sudo] password for caroline: 
+Writing updated profile for /home/caroline/appArmourProject/p2.
+Setting /home/caroline/appArmourProject/p2 to complain mode.
+
+Before you begin, you may wish to check if a
+profile already exists for the application you
+wish to confine. See the following wiki page for
+more information:
+https://gitlab.com/apparmor/apparmor/wikis/Profiles
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+Reading log entries from /var/log/syslog.
+Updating AppArmor profiles in /etc/apparmor.d.
+Complain-mode changes:
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/mm/transparent_hugepage/hpage_pmd_size
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/mm/transparent_hugepage/hpage_pmd_size r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+<!-- Profile:  /home/caroline/appArmourProject/p2
+Path:     /tmp/project21552454580
+New Mode: owner rw
+Severity: unknown
+
+ [1 - #include <abstractions/user-tmp>]
+  2 - owner /tmp/project21552454580 rw, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / (O)wner permissions off / Abo(r)t / (F)inish
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /home/caroline/.project2/config
+New Mode: owner w
+Severity: 6
+
+ [1 - owner /home/*/.project2/config w,]
+  2 - owner /home/caroline/.project2/config w, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / (O)wner permissions off / Abo(r)t / (F)inish -->
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/log/dmesg
+New Mode: r
+Severity: 3
+
+ [1 - /var/log/dmesg r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/log/dpkg.log
+New Mode: r
+Severity: 3
+
+ [1 - /var/log/dpkg.log r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/log/faillog
+New Mode: r
+Severity: 3
+
+ [1 - /var/log/faillog r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /home/caroline/.profile
+New Mode: owner r
+Severity: 4
+
+ [1 - owner /home/*/.profile r,]
+  2 - owner /home/caroline/.profile r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / (O)wner permissions off / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /home/caroline/.bash_history
+New Mode: owner r
+Severity: 4
+
+ [1 - owner /home/*/.bash_history r,]
+  2 - owner /home/caroline/.bash_history r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / (O)wner permissions off / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/fb
+New Mode: r
+Severity: 6
+
+ [1 - /proc/fb r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/keys
+New Mode: r
+Severity: 6
+
+ [1 - /proc/keys r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/misc
+New Mode: r
+Severity: 6
+
+ [1 - /proc/misc r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/iomem
+New Mode: r
+Severity: 6
+
+ [1 - /proc/iomem r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/locks
+New Mode: r
+Severity: 6
+
+ [1 - /proc/locks r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/swaps
+New Mode: r
+Severity: 6
+
+ [1 - /proc/swaps r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/crypto
+New Mode: r
+Severity: 6
+
+ [1 - /proc/crypto r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/mdstat
+New Mode: r
+Severity: 6
+
+ [1 - /proc/mdstat r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/vmstat
+New Mode: r
+Severity: 6
+
+ [1 - /proc/vmstat r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/cgroups
+New Mode: r
+Severity: 6
+
+ [1 - /proc/cgroups r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/cmdline
+New Mode: r
+Severity: 6
+
+ [1 - /proc/cmdline r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/devices
+New Mode: r
+Severity: 6
+
+ [1 - /proc/devices r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/ioports
+New Mode: r
+Severity: 6
+
+ [1 - /proc/ioports r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/loadavg
+New Mode: r
+Severity: 6
+
+ [1 - /proc/loadavg r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/modules
+New Mode: r
+Severity: 6
+
+ [1 - /proc/modules r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/consoles
+New Mode: r
+Severity: 6
+
+ [1 - /proc/consoles r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/kallsyms
+New Mode: r
+Severity: 7
+
+ [1 - /proc/kallsyms r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/softirqs
+New Mode: r
+Severity: 6
+
+ [1 - /proc/softirqs r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/zoneinfo
+New Mode: r
+Severity: 6
+
+ [1 - /proc/zoneinfo r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/diskstats
+New Mode: r
+Severity: 6
+
+ [1 - /proc/diskstats r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/key-users
+New Mode: r
+Severity: 6
+
+ [1 - /proc/key-users r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/schedstat
+New Mode: r
+Severity: 6
+
+ [1 - /proc/schedstat r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/interrupts
+New Mode: r
+Severity: 6
+
+ [1 - /proc/interrupts r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/partitions
+New Mode: r
+Severity: 6
+
+ [1 - /proc/partitions r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/execdomains
+New Mode: r
+Severity: 6
+
+ [1 - /proc/execdomains r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/version_signature
+New Mode: r
+Severity: 6
+
+ [1 - /proc/version_signature r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/lsb-release
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/lsb-release r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/mke2fs.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/mke2fs.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/hdparm.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/hdparm.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/anacrontab
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/anacrontab r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/rpc
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/rpc r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/libao.conf
+New Mode: r
+Severity: unknown
+
+ [1 - #include <abstractions/audio>]
+  2 - /etc/libao.conf r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/host.conf
+New Mode: r
+Severity: unknown
+
+ [1 - #include <abstractions/nameservice>]
+  2 - /etc/host.conf r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/pnm2ppa.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/pnm2ppa.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/rygel.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/rygel.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/appstream.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/appstream.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/libaudit.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/libaudit.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/sysctl.conf
+New Mode: r
+Severity: 3
+
+ [1 - /etc/sysctl.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/kernel-img.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/kernel-img.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/profile
+New Mode: r
+Severity: 1
+
+ [1 - #include <abstractions/bash>]
+  2 - /etc/profile r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/kerneloops.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/kerneloops.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/apg.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/apg.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/logrotate.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/logrotate.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/login.defs
+New Mode: r
+Severity: unknown
+
+ [1 - #include <abstractions/authentication>]
+  2 - /etc/login.defs r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/zsh_command_not_found
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/zsh_command_not_found r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/xattr.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/xattr.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/nsswitch.conf
+New Mode: r
+Severity: unknown
+
+ [1 - #include <abstractions/nameservice>]
+  2 - /etc/nsswitch.conf r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/adduser.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/adduser.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/mailcap
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/mailcap r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/hosts.deny
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/hosts.deny r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/bash_completion
+New Mode: r
+Severity: unknown
+
+ [1 - #include <abstractions/bash>]
+  2 - /etc/bash_completion r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/manpath.config
+New Mode: r
+Severity: 1
+
+ [1 - /etc/manpath.config r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/inputrc
+New Mode: r
+Severity: unknown
+
+ [1 - #include <abstractions/bash>]
+  2 - /etc/inputrc r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/issue.net
+New Mode: r
+Severity: 1
+
+ [1 - /etc/issue.net r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/subgid-
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/subgid- r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/hostname
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/hostname r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/subuid-
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/subuid- r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/popularity-contest.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/popularity-contest.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/subgid
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/subgid r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/rsyslog.conf
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/rsyslog.conf r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/shells
+New Mode: r
+Severity: 1
+
+ [1 - /etc/shells r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/mime.types
+New Mode: r
+Severity: unknown
+
+ [1 - /etc/mime.types r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/notes
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/notes r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/uevent_seqnum
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/uevent_seqnum r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/profiling
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/profiling r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/vmcoreinfo
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/vmcoreinfo r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/kexec_crash_size
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/kexec_crash_size r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/fscaps
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/fscaps r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/uevent_helper
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/uevent_helper r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/rcu_normal
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/rcu_normal r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/kexec_crash_loaded
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/kexec_crash_loaded r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/rcu_expedited
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/rcu_expedited r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/kernel/kexec_loaded
+New Mode: r
+Severity: 4
+
+ [1 - /sys/kernel/kexec_loaded r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/wakeup_count
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/wakeup_count r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/pm_test
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/pm_test r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/pm_print_times
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/pm_print_times r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/wake_unlock
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/wake_unlock r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/pm_wakeup_irq
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/pm_wakeup_irq r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/wake_lock
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/wake_lock r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/state
+New Mode: r
+Severity: 2
+
+ [1 - /sys/power/state r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/mem_sleep
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/mem_sleep r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/pm_debug_messages
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/pm_debug_messages r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/pm_async
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/pm_async r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /sys/power/pm_freeze_timeout
+New Mode: r
+Severity: 4
+
+ [1 - /sys/power/pm_freeze_timeout r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/cron.service
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/cron.service r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/rsyslog.service
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/rsyslog.service r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/unattended-upgrades.service
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/unattended-upgrades.service r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily-upgrade.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily-upgrade.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/apt-daily.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/logrotate.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/logrotate.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/man-db.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/man-db.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/timers/stamp-apt-daily-upgrade.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/timers/stamp-apt-daily-upgrade.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/timers/stamp-apt-daily.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/timers/stamp-apt-daily.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/timers/stamp-logrotate.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/timers/stamp-logrotate.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/lib/systemd/timers/stamp-man-db.timer
+New Mode: r
+Severity: unknown
+
+ [1 - /var/lib/systemd/timers/stamp-man-db.timer r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+<!-- Profile:  /home/caroline/appArmourProject/p2
+Path:     /var/log/syslog
+New Mode: r
+Severity: 3
+
+ [1 - /var/log/syslog r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish -->
+
+<!-- Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/fstab
+New Mode: r
+Severity: 3
+
+ [1 - #include <abstractions/evince>]
+  2 - /etc/fstab r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish -->
+
+<!-- Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/version
+New Mode: r
+Severity: 6 -->
+
+ <!-- [1 - /proc/version r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/buddyinfo
+New Mode: r
+Severity: 6 -->
+
+ <!-- [1 - /proc/buddyinfo r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+ <!-- Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/crontab
+New Mode: r
+Severity: 1
+
+[1 - /etc/crontab r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+-->
+
+
+<!-- Profile:  /home/caroline/appArmourProject/p2
+Path:     /run/systemd/resolve/stub-resolv.conf
+New Mode: r
+Severity: unknown 
+
+ [1 - #include <abstractions/nameservice>]
+  2 - /run/systemd/resolve/stub-resolv.conf r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish -->
+
+
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/passwd
+New Mode: r
+Severity: 4
+
+ [1 - #include <abstractions/nameservice>]
+  2 - /etc/passwd r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /etc/hosts
+New Mode: r
+Severity: unknown
+
+ [1 - #include <abstractions/nameservice>]
+  2 - /etc/hosts r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /home/caroline/appArmourProject/template
+New Mode: owner r
+Severity: 4
+
+ [1 - owner /home/*/appArmourProject/template r,]
+  2 - owner /home/caroline/appArmourProject/template r, 
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / (O)wner permissions off / Abo(r)t / (F)inish
+
+Profile:  /home/caroline/appArmourProject/p2
+Path:     /proc/sys/net/core/somaxconn
+New Mode: r
+Severity: 6
+
+ [1 - /proc/sys/net/core/somaxconn r,]
+(A)llow / [(D)eny] / (I)gnore / (G)lob / Glob with (E)xtension / (N)ew / Audi(t) / Abo(r)t / (F)inish
+
+Profile:        /home/caroline/appArmourProject/p2
+Network Family: inet
+Socket Type:    stream
+
+ [1 - #include <abstractions/apache2-common>]
+  2 - #include <abstractions/nameservice> 
+  3 - network inet stream, 
+(A)llow / [(D)eny] / (I)gnore / Audi(t) / Abo(r)t / (F)inish
+
+Profile:        /home/caroline/appArmourProject/p2
+Network Family: inet6
+Socket Type:    stream
+
+ [1 - #include <abstractions/apache2-common>]
+  2 - #include <abstractions/nameservice> 
+  3 - network inet6 stream, 
+(A)llow / [(D)eny] / (I)gnore / Audi(t) / Abo(r)t / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
+
+[(S)can system log for AppArmor events] / (F)inish
+
+Profiling: /home/caroline/appArmourProject/p2
+
+Please start the application to be profiled in
+another window and exercise its functionality now.
+
+Once completed, select the "Scan" option below in 
+order to scan the system logs for AppArmor events. 
+
+For each AppArmor event, you will be given the 
+opportunity to choose whether the access should be 
+allowed or denied.
