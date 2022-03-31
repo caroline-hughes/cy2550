@@ -3,10 +3,10 @@
 
 /home/caroline/p2 {
   #include <abstractions/base>
-  #include <abstractions/evince>
-  #include <abstractions/nameservice>
-  #include <abstractions/user-tmp>
-
+  /usr/lib/*/glib-2.0/gio-launch-desktop ixr,
+  /usr/lib/p7zip/7zr ixr,
+  /usr/lib/p7zip/7za ixr,
+  /usr/lib/ghostscript/** mr,
   /etc/crontab r,
   /home/caroline/p2 mr,
   /proc/buddyinfo r,
@@ -14,5 +14,11 @@
   /var/log/syslog r,
   owner /home/*/.project2/config w,
   owner /home/*/template r,
-
+  owner /tmp/** rw,
+  /etc/fstab r,
+  /{,var/}run/systemd/resolve/stub-resolv.conf r,
+  /etc/passwd r,
+  /etc/hosts r,
+  network inet6 stream,
+  network inet6 dgram,
 }
