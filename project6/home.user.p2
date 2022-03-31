@@ -2,12 +2,7 @@
 #include <tunables/global>
 
 /home/caroline/appArmourProject/p2 {
-  /usr/lib/*/glib-2.0/gio-launch-desktop ixr,
-  /usr/lib/p7zip/7zr ixr,
-  /usr/lib/p7zip/7za ixr,
-  /usr/lib/ghostscript/** mr,
   /etc/crontab r,
-  /home/caroline/appArmourProject/p2 mr,
   /proc/buddyinfo r,
   /proc/version r,
   /var/log/syslog r,
