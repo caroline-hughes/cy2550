@@ -14,7 +14,6 @@
   /etc/passwd r,
   /etc/hosts r,
   network inet6 stream,
-  network inet6 dgram,
-  /{usr/,}lib/@{multiarch}/**.so* mr,
+  /{usr/,}lib/@{multiarch}/**.so*  mr,
   @{PROC}/stat r,
 }
